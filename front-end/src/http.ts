@@ -131,7 +131,6 @@ export const apiClient = new NewHttpClient(serviceProto, {
 });
 
 apiClient.flows.preCallApiFlow.push((node) => {
-  console.log("before request");
   if (!publicStorage) {
     const localData = localStorage.getItem("publicData");
     if (localData) {

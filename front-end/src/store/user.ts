@@ -4,7 +4,8 @@ import { ResGetUserInfo } from "../shared/protocols/user/PtlGetUserInfo";
 
 interface UserState {
   user?: ResGetUserInfo;
-  getUser: () => void;
+  getUser: () => Promise<void>;
+  logout: () => Promise<void>;
 }
 
 export const useUserStore = create<UserState>((set) => ({
@@ -13,6 +14,14 @@ export const useUserStore = create<UserState>((set) => ({
     const data = await apiClient.callApi("user/GetUserInfo", {});
     if (data.isSucc) {
       set((state) => ({ ...state, user: data.res }));
+    }
+  },
+  logout: async () => {
+    const data = await apiClient.callApi("user/Logout", {});
+    if (data.isSucc) {
+      set((state) => ({ ...state, user: undefined }));
+      localStorage.removeItem("token");
+      window.location.href = "/login";
     }
   },
 }));
