@@ -5,6 +5,12 @@ tsrpc-blog is a blog system based on tsrpc.
 - [x] Login/Register
 - [x] Post
 - [x] Tag
+- [ ] public session
+- [ ] private session
+- [ ] upload file to oss
+- [ ] ci
+- [ ] create deploy file
+
 
 ## Required environment
 - Node.js 14+
