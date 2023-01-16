@@ -17,8 +17,13 @@ export const Layout = () => {
             <div className="text-4 mr-10 hover:text-blue cursor-pointer text-white">
               首页
             </div>
+            <img
+              src={user?.profile?.avatar}
+              alt="avatar"
+              className="w-8 rounded-full mr-3"
+            />
             <div className="text-4 mr-10 hover:text-blue cursor-pointer text-white">
-              {user?.nickName}
+              {user?.profile?.nickname}
             </div>
             <div
               className="text-4 hover:text-blue cursor-pointer text-white"

@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@tailwindcss/line-clamp': ^0.4.2
   '@tanstack/react-query': ^4.22.0
   '@types/lodash': ^4.14.191
   '@types/react': ^18.0.26
@@ -9,6 +10,7 @@ specifiers:
   '@vitejs/plugin-react': ^3.0.0
   ahooks: ^3.7.4
   antd: ^5.1.4
+  clsx: ^1.2.1
   dayjs: ^1.11.7
   lodash: ^4.17.21
   react: ^18.2.0
@@ -23,9 +25,11 @@ specifiers:
   zustand: ^4.3.1
 
 dependencies:
+  '@tailwindcss/line-clamp': 0.4.2
   '@tanstack/react-query': 4.22.0_biqbaboplfbrettd7655fr4n2y
   ahooks: 3.7.4_react@18.2.0
   antd: 5.1.4_biqbaboplfbrettd7655fr4n2y
+  clsx: 1.2.1
   dayjs: 1.11.7
   lodash: 4.17.21
   react: 18.2.0
@@ -712,6 +716,12 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /@tailwindcss/line-clamp/0.4.2:
+    resolution: {integrity: sha512-HFzAQuqYCjyy/SX9sLGB1lroPzmcnWv1FHkIpmypte10hptf4oPUfucryMKovZh2u0uiS9U5Ty3GghWfEJGwVw==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
+    dev: false
+
   /@tanstack/query-core/4.22.0:
     resolution: {integrity: sha512-OeLyBKBQoT265f5G9biReijeP8mBxNFwY7ZUu1dKL+YzqpG5q5z7J/N1eT8aWyKuhyDTiUHuKm5l+oIVzbtrjw==}
     dev: false
@@ -1118,6 +1128,11 @@ packages:
 
   /classnames/2.3.2:
     resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+    dev: false
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: false
 
   /color-convert/1.9.3:
